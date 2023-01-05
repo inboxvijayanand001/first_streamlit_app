@@ -17,4 +17,4 @@ fruit = fruit.set_index('Fruit')
 
 streamlit.multiselect("Pick some fruits:", list(fruit.index))
 # Display the table on the page.
-streamlit.write(fruit)
+streamlit.dataframe(fruit)
